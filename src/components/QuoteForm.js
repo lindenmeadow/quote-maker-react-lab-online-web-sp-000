@@ -6,7 +6,7 @@ import { addQuote } from '../actions/quotes';
 const defaultState = {
   content: "",
   author: "",
-  votes: 0,
+  votes: 0
 };
 
 class QuoteForm extends Component {
