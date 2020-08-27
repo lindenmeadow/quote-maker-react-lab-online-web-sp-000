@@ -1,6 +1,12 @@
 import { expect } from 'chai';
 import uuid from 'uuid';
-import actions from "../../src/actions/quotes";
+import {
+  addQuote,	
+  removeQuote,	
+  upvoteQuote,	
+  downvoteQuote	
+} from '../../src/actions/quotes';
+
 
 
 describe('Quotes Actions', () => {
