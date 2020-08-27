@@ -8,6 +8,7 @@ import {
 } from '../../src/actions/quotes';
 
 
+
 describe('Quotes Actions', () => {
   describe('addQuote(quote: {})', () => {
     it('should return an Object with a type of "ADD_QUOTE" and a quote object', () => {
@@ -43,7 +44,7 @@ describe('Quotes Actions', () => {
     });
   });
 
-  describe('downvoteQuote(quoteId: INteger)', () => {
+  describe('downvoteQuote(quoteId: Integer)', () => {
     it('should return an Object with a type of "DOWNVOTE_QUOTE" and a quoteId', () => {
       expect(downvoteQuote(10)).to.deep.equal({
         type: 'DOWNVOTE_QUOTE',
