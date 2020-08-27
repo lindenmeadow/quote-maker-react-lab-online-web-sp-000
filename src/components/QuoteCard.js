@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuoteCard = (props) =>
+const QuoteCard = ({ quote, onUpvote, onDownvote, onDelete }) =>
   <div>
     <div className="card card-inverse card-success card-primary mb-3 text-center">
       <div className="card-block">
