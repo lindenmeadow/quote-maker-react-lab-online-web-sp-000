@@ -22,7 +22,7 @@ describe('Quotes Actions', () => {
 
   describe('removeQuote(quoteId: Integer)', () => {
     it('should return an Object with a type of "REMOVE_QUOTE" and a quoteId', () => {
-      expect(removeQuote(10)).to.deep.equal({
+      expect(actions.removeQuote(10)).to.deep.equal({
         type: 'REMOVE_QUOTE',
         quoteId: 10
       });
