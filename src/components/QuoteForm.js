@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { addQuote } from '../actions/quotes';
 
 export class QuoteForm extends Component {
