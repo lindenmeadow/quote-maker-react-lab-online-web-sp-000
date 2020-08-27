@@ -1,23 +1,27 @@
-import types from "../types";
+export const addQuote = (quote) => {
+  return {
+    type: 'ADD_QUOTE',
+    quote  
+  };
+};
 
-const addQuote = (quote) => ({
-  type: types.ADD_QUOTE,
-  quote,
-});
+export const removeQuote = (quoteId) => {
+  return {
+    type: 'REMOVE_QUOTE',
+    quoteId  
+  };
+};
 
-const removeQuote = (quoteId) => ({
-  type: types.REMOVE_QUOTE,
-  quoteId,
-});
+export const upvoteQuote = (quoteId) => {
+  return {
+    type: 'UPVOTE_QUOTE',
+    quoteId
+  };
+};
 
-const upvoteQuote = (quoteId) => ({
-  type: types.UPVOTE_QUOTE,
-  quoteId,
-});
-
-const downvoteQuote = (quoteId) => ({
-  type: types.DOWNVOTE_QUOTE,
-  quoteId,
-});
-
-export default { addQuote, removeQuote, upvoteQuote, downvoteQuote };
+export const downvoteQuote = (quoteId) => {
+  return {
+    type: 'DOWNVOTE_QUOTE',
+    quoteId
+  };
+};
