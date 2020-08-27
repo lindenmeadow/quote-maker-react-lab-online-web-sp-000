@@ -21,7 +21,7 @@ export class QuoteForm extends Component {
     event.preventDefault();
     const quote = {
       id: uuid(),
-      content: this.state.content, 
+      content: this.state.content,
       author: this.state.author,
       votes: 0
     }
