@@ -6,6 +6,7 @@ import QuoteCard from '../components/QuoteCard';
 class Quotes extends Component {
 
   render() {
+    const { quotes, removeQuote, upvoteQuote, downvoteQuote } = this.props;
     return (
       <div>
         <hr />
