@@ -29,4 +29,10 @@ class Quotes extends Component {
 }
 
 //add arguments to connect as needed
-export default connect()(Quotes);
+const mapStateToProps = ({ quotes }) => ({ quotes });
+const { removeQuote, upvoteQuote, downvoteQuote } = actions;
+export default connect(mapStateToProps, {
+  removeQuote,
+  upvoteQuote,
+  downvoteQuote,
+})(Quotes);
