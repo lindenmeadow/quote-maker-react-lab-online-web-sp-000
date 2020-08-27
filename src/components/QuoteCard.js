@@ -23,6 +23,7 @@ const QuoteCard = ({ quote, onUpvote, onDownvote, onDelete }) =>
           <button
             type="button"
             className="btn btn-secondary"
+            onClick={(_) => onDownvote(quote.quoteId)}
           >
             Downvote
           </button>
