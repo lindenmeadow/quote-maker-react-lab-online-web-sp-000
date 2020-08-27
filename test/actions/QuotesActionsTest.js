@@ -28,7 +28,7 @@ describe('Quotes Actions', () => {
 
   describe('removeQuote(quoteId: Integer)', () => {
     it('should return an Object with a type of "REMOVE_QUOTE" and a quoteId', () => {
-      expect(actions.removeQuote(10)).to.deep.equal({
+      expect(removeQuote(10)).to.deep.equal({
         type: 'REMOVE_QUOTE',
         quoteId: 10
       });
@@ -37,14 +37,14 @@ describe('Quotes Actions', () => {
 
   describe('upvoteQuote(quoteId: Integer)', () => {
     it('should return an Object with a type of "UPVOTE_QUOTE" and a quoteId', () => {
-      expect(actions.upvoteQuote(10)).to.deep.equal({
+      expect(upvoteQuote(10)).to.deep.equal({
         type: 'UPVOTE_QUOTE',
         quoteId: 10
       });
     });
   });
 
-  describe('downvoteQuote(quoteId: INteger)', () => {
+  describe('downvoteQuote(quoteId: Integer)', () => {
     it('should return an Object with a type of "DOWNVOTE_QUOTE" and a quoteId', () => {
       expect(actions.downvoteQuote(10)).to.deep.equal({
         type: 'DOWNVOTE_QUOTE',
