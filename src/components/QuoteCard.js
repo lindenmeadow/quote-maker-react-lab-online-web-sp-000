@@ -30,7 +30,7 @@ const QuoteCard = ({ quote, removeQuote, upvoteQuote, downvoteQuote }) => (
           <button
             type="button"
             className="btn btn-danger"
-            onClick={(_) => onDelete(quote.quoteId)}
+            onClick={() => removeQuote(quote.id)}
           >
             <span aria-hidden="true">&times;</span>
           </button>
