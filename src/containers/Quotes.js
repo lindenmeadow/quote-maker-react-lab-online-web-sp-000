@@ -17,11 +17,9 @@ class Quotes extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              {/*
-                TODO:
-
-                Render Quotes With QuoteCard component and pass down callback props for removing, upvoting and downvoting quotes
-               */}
+              {quotes.map((quote, idx) => (
+                <QuoteCard key={idx} quote={quote} onDelete={removeQuote} onUpvote={upvoteQuote} onDownvote={downvoteQuote}/>
+              ))}
             </div>
           </div>
         </div>
