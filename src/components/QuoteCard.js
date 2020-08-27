@@ -38,7 +38,7 @@ const QuoteCard = ({ quote, onUpvote, onDownvote, onDelete }) => (
         <div>Votes: {quote.votes}</div>
       </div>
     </div>
-  </div>;
+  </div>
 );
 
 export default QuoteCard;
