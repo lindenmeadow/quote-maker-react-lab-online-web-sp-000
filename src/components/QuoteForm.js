@@ -78,4 +78,5 @@ class QuoteForm extends Component {
 }
 
 //add arguments to connect as needed
-export default connect()(QuoteForm);
+const { addQuote } = actions;
+export default connect(null, { addQuote })(QuoteForm);
