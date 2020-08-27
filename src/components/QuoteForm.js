@@ -3,10 +3,17 @@ import uuid from 'uuid';
 import { connect } from 'react-redux';
 import { addQuote } from '../actions/quotes';
 
+const defaultState = {
+  content: "",
+  author: "",
+  votes: 0,
+};
+
 class QuoteForm extends Component {
 
   state = {
-    //set up a controlled form with internal state
+    ...defaultState,
+    quoteId: uuid(),
   }
 
   handleOnChange = event => {
