@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import actions from "../actions/quotes";
 import QuoteCard from '../components/QuoteCard';
 
 class Quotes extends Component {
