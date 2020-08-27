@@ -10,10 +10,11 @@ export class QuoteForm extends Component {
     };
   };
 
-  handleOnChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
+  handleOnChange = event => {
+    const {name, value} = event.target;
+     this.setState({
+     [name]: value
+   });
   }
 
   handleOnSubmit = (event) => {
