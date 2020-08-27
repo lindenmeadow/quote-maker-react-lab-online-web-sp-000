@@ -80,5 +80,5 @@ export class QuoteForm extends Component {
 }
 
 //add arguments to connect as needed
-//const { addQuote } = actions;
+
 export default connect(null, { addQuote })(QuoteForm);
