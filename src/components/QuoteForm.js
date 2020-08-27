@@ -17,12 +17,18 @@ export class QuoteForm extends Component {
    });
   }
 
-  handleOnSubmit = (event) => {
+  handleOnSubmit = event => {
     event.preventDefault();
+    const quote = {
+      id: uuid(),
+      content: this.state.content, 
+      author: this.state.author,
+      votes: 0
+    }
     this.props.addQuote(this.state);
     this.setState({
-      ...defaultState,
-       quoteId: uuid()
+      content: '',
+      author: ''
     });
   }
 
