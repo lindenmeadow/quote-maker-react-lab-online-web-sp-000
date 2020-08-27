@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuoteCard = ({ quote, onUpvote, onDownvote, onDelete }) => (
+const QuoteCard = ({ quote, removeQuote, upvoteQuote, downvoteQuote }) => (
   <div>
     <div className="card card-inverse card-success card-primary mb-3 text-center">
       <div className="card-block">
@@ -16,7 +16,7 @@ const QuoteCard = ({ quote, onUpvote, onDownvote, onDelete }) => (
           <button
             type="button"
             className="btn btn-primary"
-            onClick={(_) => onUpvote(quote.quoteId)}
+            onClick={() => upvoteQuote(quote.id)} 
           >
             Upvote
           </button>
