@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import { addQuote } from '../actions/quotes';
 
-const defaultState = {
-  content: "",
-  author: "",
-  votes: 0
-};
+export class QuoteForm extends Component {
 
-class QuoteForm extends Component {
-
-  state = {
-    ...defaultState,
-    quoteId: uuid()
-  }
+  constructor(props) {
+    this.state = {
+      content: '',
+      author: ''
+    };
+  };
 
   handleOnChange = (event) => {
     this.setState({
